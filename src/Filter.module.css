@@ -1,0 +1,58 @@
+.filter {
+  width: 30%;
+  padding: 0 1rem;
+  height: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 115, 0, 0.671),
+    rgba(255, 255, 0, 0.747)
+  );
+}
+.filter h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+.city,
+.HomeType,
+.minprice,
+.maxprice {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+.sortby,
+.price,
+.extras {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.title {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 0.3rem;
+  color: red;
+  text-decoration: underline solid;
+}
+.extras label {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 650px) {
+  .filter {
+    width: 100%;
+    height: 50%;
+    justify-content: space-between;
+  }
+}

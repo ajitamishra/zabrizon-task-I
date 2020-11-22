@@ -1,0 +1,62 @@
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  background-image: linear-gradient(
+    to left,
+    rgb(10, 144, 233),
+    rgb(137, 11, 221)
+  );
+}
+.logo h3 {
+  margin: 0.3rem;
+  padding: 0.2rem 1rem;
+  background-color: rgb(229, 255, 0);
+  border-radius: 0.4rem;
+  transform: rotate(-10deg);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+  font-weight: 700;
+}
+nav a:hover {
+  color: rgb(208, 255, 0);
+}
+.register {
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  transition: all 0.5s;
+  background-image: radial-gradient(rgb(0, 255, 98), rgb(123, 255, 0));
+}
+.register:hover {
+  border-radius: 1rem;
+  color: rgb(25, 0, 255);
+  background-image: radial-gradient(rgb(0, 255, 255), rgb(0, 195, 255));
+}
+@media (max-width: 650px) {
+  .logo h3 {
+    margin: 0.2rem;
+    padding: 0.1rem 0.5rem;
+    transform: rotate(-5deg);
+  }
+  nav a {
+    margin: 0 0.5rem;
+    font-size: 0.8rem;
+  }
+  .register {
+    padding: 0.3rem 0.7rem;
+  }
+}
